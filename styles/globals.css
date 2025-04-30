@@ -1,0 +1,72 @@
+/* globals.css */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #59092A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F79C00;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb133;
+}
+
+/* Focus styles for accessibility */
+:focus {
+  outline: 2px solid #F79C00;
+  outline-offset: 2px;
+}
+
+/* Smooth appearance for form elements */
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+/* Prevent text selection on elements like buttons */
+.no-select {
+  user-select: none;
+}
+
+/* Helper class for screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Prevent iOS zoom on input fields */
+@media screen and (max-width: 768px) {
+  input, textarea, select, button {
+    font-size: 16px !important;
+  }
+}
