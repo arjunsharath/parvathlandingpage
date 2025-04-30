@@ -1,4 +1,3 @@
-// File: pages/index.tsx
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -50,13 +49,8 @@ export default function Home() {
     },
   ];
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  const handleNavClick = () => {
-    setMenuOpen(false);
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const handleNavClick = () => setMenuOpen(false);
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -85,10 +79,6 @@ export default function Home() {
           content="Parvath - Distributor of Crystal, Dixcy, VIP innerwear brands in Chennai"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <main className={styles.main}>
@@ -117,7 +107,6 @@ export default function Home() {
                 Contact
               </a>
             </div>
-
             <div
               className={`${styles.hamburger} ${menuOpen ? styles.active : ""}`}
               onClick={toggleMenu}
@@ -204,14 +193,14 @@ export default function Home() {
             middlemen and selling direct to customers, we pass the savings
             directly to you. We are committed to maintaining full stock
             availability, ensuring that all sizes and colors of our products are
-            accessible at all times. Whether you're looking for everyday comfort
-            or premium-quality innerwear, Parvath delivers genuine branded
-            products at unbeatable value.
+            accessible at all times. Whether you&apos;re looking for everyday
+            comfort or premium-quality innerwear, Parvath delivers genuine
+            branded products at unbeatable value.
           </p>
           <p>
-            Why Choose Parvath? Guaranteed authenticity from trusted brands Wide
-            selection with consistent stock availability Affordable innerwear
-            for men, women, and kids
+            Why Choose Parvath? Guaranteed authenticity from trusted brands.
+            Wide selection with consistent stock availability. Affordable
+            innerwear for men, women, and kids.
           </p>
         </section>
 
